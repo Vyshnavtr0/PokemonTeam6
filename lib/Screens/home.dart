@@ -2,6 +2,7 @@ import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pokemon/Screens/quizscreen.dart';
+import 'package:pokemon/Screens/register.dart';
 import 'package:shimmer_image/shimmer_image.dart';
 
 class Home extends StatefulWidget {
@@ -111,6 +112,10 @@ class _HomeState extends State<Home> {
                             
                             onPressed: () {
                               // Add your action here
+                               Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Register()),
+            );
                             },
                             style: ButtonStyle(
                               backgroundColor:

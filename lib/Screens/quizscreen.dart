@@ -15,7 +15,7 @@ class Quiz extends StatefulWidget {
 class _QuizState extends State<Quiz> {
   final controller = CountDownController();
   final DateTime specificTime = DateTime(2023, 10, 15, 15, 0);
-  int page = 1;
+  int page = 0;
   int q = 0;
   int score = 0;
   int correctinde = 5;
@@ -24,10 +24,11 @@ class _QuizState extends State<Quiz> {
   bool ans = false;
   int timee = 10;
   Future<void> qchange() async {
-    if(q==11){
+    if(q==9){
       setState(() {
         page = 1;
       });
+       _controllerwin.play();
     }else{
 await Future.delayed(const Duration(milliseconds: 500));
     setState(() {

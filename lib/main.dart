@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Pokemon',
       theme: ThemeData(
        
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
       home: Splash(),

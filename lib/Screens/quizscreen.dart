@@ -237,7 +237,7 @@ await Future.delayed(const Duration(milliseconds: 500));
                                     image:
                                         "https://res.cloudinary.com/dvhlfyvrr/image/upload/v1697369241/Pet%20Life/Data/Mother_s_Day_rrfryj.png",
                                     imageError: 'assets/images/noimage.jpeg',
-                                    fit: BoxFit.contain,
+                                    fit: BoxFit.cover,
                                   ),
                                 ),
                               ),

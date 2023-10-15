@@ -52,11 +52,12 @@ class _HomeState extends State<Home> {
             itemBuilder: (context, index) {
               return ClipRRect(
                 borderRadius: BorderRadius.circular(18),
-                child: ProgressiveImage(
+                child: Image.network(
+                  "https://res.cloudinary.com/dvhlfyvrr/image/upload/v1697379972/Pet%20Life/Data/IMG-20231015-WA0016_yeqoo3.jpg",
                   width: MediaQuery.of(context).size.width / 1.1,
                   height: MediaQuery.of(context).size.height / 4.3,
-                  image: "l[index]",
-                  imageError: 'assets/images/noimage.jpeg',
+                   fit: BoxFit.cover,
+                  //imageError: 'assets/images/noimage.jpeg',
                 ),
               );
             },

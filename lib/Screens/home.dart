@@ -13,6 +13,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+ List<String> lname =["PokéWiz","PikaSketch","PokeMasquerade"];
+ List<String> l= ["https://res.cloudinary.com/dvhlfyvrr/image/upload/v1697369241/Pet%20Life/Data/Mother_s_Day_rrfryj.png",
+ "https://res.cloudinary.com/dvhlfyvrr/image/upload/v1697369241/Pet%20Life/Data/jazz_fjheb3.png",
+ "https://res.cloudinary.com/dvhlfyvrr/image/upload/v1697369241/Pet%20Life/Data/International_Kids_Safe_mwyprw.png"];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,7 +79,7 @@ class _HomeState extends State<Home> {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(40),
                     child: Image.network(
-                      "https://res.cloudinary.com/dvhlfyvrr/image/upload/v1697369241/Pet%20Life/Data/Mother_s_Day_rrfryj.png",
+                     l[index],
                       width: MediaQuery.of(context).size.width / 4,
                       height: MediaQuery.of(context).size.width / 4,
 

@@ -235,7 +235,7 @@ await Future.delayed(const Duration(milliseconds: 500));
                                     height: MediaQuery.of(context).size.height /
                                         4.3,
                                     image:
-                                        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpokemon.fandom.com%2Fes%2Fwiki%2FCharmeleon&psig=AOvVaw1sp2CUNHxsuJiFHz5hWRZR&ust=1697449957706000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIjl5f_j94EDFQAAAAAdAAAAABAJ",
+                                        "https://res.cloudinary.com/dvhlfyvrr/image/upload/v1697369241/Pet%20Life/Data/Mother_s_Day_rrfryj.png",
                                     imageError: 'assets/images/noimage.jpeg',
                                     fit: BoxFit.contain,
                                   ),

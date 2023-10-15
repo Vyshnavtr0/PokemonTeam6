@@ -39,6 +39,8 @@ dependencies:
   intl: ^0.17.0 
   shimmer_image: ^0.0.2
   card_swiper: ^3.0.1
+  confetti: ^0.7.0
+  simple_progress_indicators: ^0.2.0
 
 dev_dependencies:
   flutter_test:

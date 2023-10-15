@@ -61,7 +61,7 @@ class _HomeState extends State<Home> {
           ListView.builder(
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
-            itemCount: 10,
+            itemCount: 3,
             itemBuilder: (context,index){
 
             return Container(
@@ -138,14 +138,43 @@ class _HomeState extends State<Home> {
             ),
           );
           }),
-          TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Quiz()),
-                );
-              },
-              child: Text("Hello"))
+          SizedBox(height: 40,),
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                              height: 40,
+                              width: MediaQuery.of(context).size.width/1.1,
+                              child: ElevatedButton(
+                                
+                                onPressed: () {
+                                  // Add your action here
+                                   Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Quiz()),
+            );
+                                },
+                                style: ButtonStyle(
+                                  backgroundColor:
+                                      MaterialStateProperty.all(Colors.black),
+                                  shape: MaterialStateProperty.all(
+                                    RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8.0),
+                                    ),
+                                  ),
+                                ),
+                                child: Text(
+                                  'Go to Quiz',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 14.0,
+                                  ),
+                                ),
+                              ),
+                            ),
+            ],
+          ),
         ],
       )),
     );
